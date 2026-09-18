@@ -1,0 +1,72 @@
+        /* ===== Generated Design Styles ===== */
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #ffffff; }
+        .sketch-canvas { max-width: 1100px; width: 100%; margin: 0 auto; overflow-x: hidden; }
+        .sketch-canvas img { max-width: 100%; }
+        @font-face { font-family: "BlackOpsOne-Regular"; src: url("fonts/BlackOpsOne_Regular.ttf"); font-display: swap; }
+        #header_1789701682144 { position: relative; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; min-height: 70px; background-color: #e53935; padding: 10px 24px; }
+        #header_1789701682144 .header-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+        #header_1789701682144 .logo-img { height: 42px; width: auto; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+        #header_1789701682144 .header-text { color: #ffffff; font-size: 14px; font-family: BlackOpsOne-Regular; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        #header_1789701682144 .menu-toggle { display: flex; align-items: center; gap: 8px; background: none; border: none; cursor: pointer; padding: 6px 4px; flex-shrink: 0; }
+        #header_1789701682144 .menu-toggle .menu-label { color: #ffffff; font-size: 14px; font-family: BlackOpsOne-Regular; font-weight: 600; }
+        #header_1789701682144 .hamburger-icon { display: flex; flex-direction: column; gap: 4px; }
+        #header_1789701682144 .hamburger-icon span { display: block; width: 24px; height: 3px; background-color: #ffffff; border-radius: 2px; transition: transform 0.2s ease, opacity 0.2s ease; }
+        #header_1789701682144 .nav-menu { display: flex; flex-direction: column; position: absolute; top: 100%; right: 24px; margin-top: 8px; background-color: #e53935; border-radius: 8px; overflow: hidden; z-index: 50; box-shadow: 0 6px 18px rgba(0,0,0,0.2); min-width: 180px; max-width: min(90vw, 320px); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease; pointer-events: none; }
+        #header_1789701682144 .nav-menu.open { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+        #header_1789701682144 .nav-menu a { color: #ffffff; font-size: 14px; font-family: BlackOpsOne-Regular; text-decoration: none; font-weight: 600; cursor: pointer; padding: 12px 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        #header_1789701682144 .nav-menu a:hover { background-color: rgba(255,255,255,0.15); }
+        @media (max-width: 480px) {
+            #header_1789701682144 .nav-menu { left: 16px; right: 16px; min-width: 0; max-width: none; }
+        }
+        #services_1789701789364 { background-color: #ffffff; padding: 44px 20px; }
+        #services_1789701789364 .services-track { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; padding-bottom: 8px; }
+        #services_1789701789364 .services-track::-webkit-scrollbar { height: 0; }
+        #services_1789701789364 .service-card { flex: 0 0 220px; scroll-snap-align: start; background-color: #f7f7f7; border-radius: 10px; padding: 20px; box-sizing: border-box; }
+        #services_1789701789364 .service-card h3 { color: #000000; font-size: 18px; font-family: BlackOpsOne-Regular; margin: 0 0 8px 0; }
+        #services_1789701789364 .service-card p { color: #555555; font-size: 13px; font-family: BlackOpsOne-Regular; margin: 0; line-height: 1.5; }
+        #text_1789701859639_wrap { width: 100%; height: 40px; background-color: transparent; display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 4px; margin: 2px auto; }
+        #text_1789701859639 {
+            width: 100%;
+            color: #000000;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: Arial;
+            text-align: center;
+            box-sizing: border-box;
+            opacity: 1.0;
+        }
+        #image_1789701870534_wrap { width: 100%; height: 80px; background-color: transparent; display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 4px; margin: 2px auto; }
+        #image_1789701870534 {
+            width: 100%;
+            height: 100%;
+            color: #000000;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: Arial;
+            text-align: center;
+            box-sizing: border-box;
+            display: block; object-fit: cover;
+        }
+        #social_1789701902930 { background-color: #ffffff; padding: 20px; }
+        #social_1789701902930 .social-row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; align-items: center; }
+        #social_1789701902930 .social-icon { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: #ffffff; font-family: Arial; font-weight: 700; font-size: calc(32px / 2.2); }
+        #button_1789701873257_wrap { width: 100%; height: 40px; background-color: transparent; display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 4px; margin: 2px auto; }
+        #button_1789701873257 {
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            background-color: #e53935;
+            border: 1px solid #e53935;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: Arial;
+            text-align: center;
+            box-sizing: border-box;
+            cursor: pointer;
+        }

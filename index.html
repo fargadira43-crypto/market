@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>market</title>
+    <style>
+        /* ===== Generated Design Styles ===== */
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #ffffff; }
+        .sketch-canvas { max-width: 1100px; width: 100%; margin: 0 auto; overflow-x: hidden; }
+        .sketch-canvas img { max-width: 100%; }
+        @font-face { font-family: "BlackOpsOne-Regular"; src: url("fonts/BlackOpsOne_Regular.ttf"); font-display: swap; }
+        #header_1789701682144 { position: relative; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; min-height: 70px; background-color: #e53935; padding: 10px 24px; }
+        #header_1789701682144 .header-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+        #header_1789701682144 .logo-img { height: 42px; width: auto; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+        #header_1789701682144 .header-text { color: #ffffff; font-size: 14px; font-family: BlackOpsOne-Regular; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        #header_1789701682144 .menu-toggle { display: flex; align-items: center; gap: 8px; background: none; border: none; cursor: pointer; padding: 6px 4px; flex-shrink: 0; }
+        #header_1789701682144 .menu-toggle .menu-label { color: #ffffff; font-size: 14px; font-family: BlackOpsOne-Regular; font-weight: 600; }
+        #header_1789701682144 .hamburger-icon { display: flex; flex-direction: column; gap: 4px; }
+        #header_1789701682144 .hamburger-icon span { display: block; width: 24px; height: 3px; background-color: #ffffff; border-radius: 2px; transition: transform 0.2s ease, opacity 0.2s ease; }
+        #header_1789701682144 .nav-menu { display: flex; flex-direction: column; position: absolute; top: 100%; right: 24px; margin-top: 8px; background-color: #e53935; border-radius: 8px; overflow: hidden; z-index: 50; box-shadow: 0 6px 18px rgba(0,0,0,0.2); min-width: 180px; max-width: min(90vw, 320px); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease; pointer-events: none; }
+        #header_1789701682144 .nav-menu.open { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+        #header_1789701682144 .nav-menu a { color: #ffffff; font-size: 14px; font-family: BlackOpsOne-Regular; text-decoration: none; font-weight: 600; cursor: pointer; padding: 12px 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        #header_1789701682144 .nav-menu a:hover { background-color: rgba(255,255,255,0.15); }
+        @media (max-width: 480px) {
+            #header_1789701682144 .nav-menu { left: 16px; right: 16px; min-width: 0; max-width: none; }
+        }
+        #services_1789701789364 { background-color: #ffffff; padding: 44px 20px; }
+        #services_1789701789364 .services-track { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; padding-bottom: 8px; }
+        #services_1789701789364 .services-track::-webkit-scrollbar { height: 0; }
+        #services_1789701789364 .service-card { flex: 0 0 220px; scroll-snap-align: start; background-color: #f7f7f7; border-radius: 10px; padding: 20px; box-sizing: border-box; }
+        #services_1789701789364 .service-card h3 { color: #000000; font-size: 18px; font-family: BlackOpsOne-Regular; margin: 0 0 8px 0; }
+        #services_1789701789364 .service-card p { color: #555555; font-size: 13px; font-family: BlackOpsOne-Regular; margin: 0; line-height: 1.5; }
+        #text_1789701859639_wrap { width: 100%; height: 40px; background-color: transparent; display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 4px; margin: 2px auto; }
+        #text_1789701859639 {
+            width: 100%;
+            color: #000000;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: Arial;
+            text-align: center;
+            box-sizing: border-box;
+            opacity: 1.0;
+        }
+        #image_1789701870534_wrap { width: 100%; height: 80px; background-color: transparent; display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 4px; margin: 2px auto; }
+        #image_1789701870534 {
+            width: 100%;
+            height: 100%;
+            color: #000000;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: Arial;
+            text-align: center;
+            box-sizing: border-box;
+            display: block; object-fit: cover;
+        }
+        #social_1789701902930 { background-color: #ffffff; padding: 20px; }
+        #social_1789701902930 .social-row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; align-items: center; }
+        #social_1789701902930 .social-icon { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: #ffffff; font-family: Arial; font-weight: 700; font-size: calc(32px / 2.2); }
+        #button_1789701873257_wrap { width: 100%; height: 40px; background-color: transparent; display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 4px; margin: 2px auto; }
+        #button_1789701873257 {
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            background-color: #e53935;
+            border: 1px solid #e53935;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: Arial;
+            text-align: center;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sketch-canvas">
+        <header id="header_1789701682144">
+            <div class="header-left">
+                <img class="logo-img" src="images/image_1.jpg" alt="logo" />
+                <span class="header-text">naseer</span>
+            </div>
+            <button type="button" class="menu-toggle" id="header_1789701682144_menu_btn" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="header_1789701682144_menu">
+                <span class="menu-label">Menu</span>
+                <span class="hamburger-icon"><span></span><span></span><span></span></span>
+            </button>
+            <nav class="nav-menu" id="header_1789701682144_menu">
+                <a href="#home" data-scroll-target="home">Home</a>
+                <a href="#button_1789701873257" data-scroll-target="button_1789701873257">About</a>
+                <a href="#elem" data-scroll-target="elem">New Button</a>
+                <a href="#services_1789701789364" data-scroll-target="services_1789701789364">naseer</a>
+            </nav>
+        </header>
+        <section id="services_1789701789364" class="services-section">
+            <div class="services-track">
+                <div class="service-card">
+                    <h3>Service One</h3>
+                    <p>A short description of this service.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Service Two</h3>
+                    <p>A short description of this service.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Service Three</h3>
+                    <p>A short description of this service.</p>
+                </div>
+                <div class="service-card">
+                    <h3>New Service</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <div id="text_1789701859639_wrap" class="widget-container">
+            <p id="text_1789701859639">Text here</p>
+        </div>
+        <div id="image_1789701870534_wrap" class="widget-container">
+            <img id="image_1789701870534" src="" alt="image" />
+        </div>
+        <section id="social_1789701902930" class="social-section">
+            <div class="social-row">
+                <a class="social-icon" style="background-color: #333333;" href="#" target="_blank" rel="noopener" aria-label="facebook">f</a>
+                <a class="social-icon" style="background-color: #333333;" href="#" target="_blank" rel="noopener" aria-label="instagram">IG</a>
+                <a class="social-icon" style="background-color: #333333;" href="#" target="_blank" rel="noopener" aria-label="facebook">f</a>
+                <a class="social-icon" style="background-color: #333333;" href="#" target="_blank" rel="noopener" aria-label="x">X</a>
+            </div>
+        </section>
+        <div id="button_1789701873257_wrap" class="widget-container">
+            <button id="button_1789701873257" >Button</button>
+        </div>
+    </div>
+    <script>
+        (function(){
+            function initMenu() {
+                var btn = document.getElementById('header_1789701682144_menu_btn');
+                var menu = document.getElementById('header_1789701682144_menu');
+                if (!btn || !menu) return false;
+                if (btn.dataset.initialized) return true;
+                btn.dataset.initialized = 'true';
+                function closeMenu() {
+                    menu.classList.remove('open');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+                function toggleMenu(e) {
+                    e.stopPropagation();
+                    var isOpen = menu.classList.toggle('open');
+                    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                }
+                btn.addEventListener('click', toggleMenu);
+                menu.querySelectorAll('a').forEach(function(a){
+                    a.addEventListener('click', function(e){
+                        e.preventDefault();
+                        closeMenu();
+                        var targetId = a.getAttribute('data-scroll-target');
+                        var targetEl = targetId ? document.getElementById(targetId) : null;
+                        if (targetEl) {
+                            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    });
+                });
+                document.addEventListener('click', function(e){
+                    if (!menu.contains(e.target) && e.target !== btn) closeMenu();
+                });
+                document.addEventListener('keydown', function(e){
+                    if (e.key === 'Escape') closeMenu();
+                });
+                return true;
+            }
+            if (!initMenu()) {
+                var attempts = 0;
+                var timer = setInterval(function() {
+                    attempts++;
+                    if (initMenu() || attempts > 20) {
+                        clearInterval(timer);
+                    }
+                }, 100);
+            }
+        })();
+        (function(){
+            var track = document.querySelector('#services_1789701789364 .services-track');
+            if (!track) return;
+            var autoplayMs = 3 * 1000;
+            var paused = false, resumeTimer = null;
+            function next(){
+                if (paused) return;
+                var card = track.querySelector('.service-card');
+                var step = card ? card.offsetWidth + 16 : 220;
+                if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 5) {
+                    track.scrollTo({left: 0, behavior: 'smooth'});
+                } else {
+                    track.scrollBy({left: step, behavior: 'smooth'});
+                }
+            }
+            setInterval(next, autoplayMs);
+            function onManual(){
+                paused = true;
+                clearTimeout(resumeTimer);
+                resumeTimer = setTimeout(function(){ paused = false; }, autoplayMs);
+            }
+            track.addEventListener('touchstart', onManual, {passive: true});
+            track.addEventListener('mousedown', onManual);
+            track.addEventListener('wheel', onManual, {passive: true});
+        })();
+    </script>
+</body>
+</html>
